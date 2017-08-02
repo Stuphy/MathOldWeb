@@ -1,0 +1,528 @@
+* {
+  color: #3f3f3f;
+}
+h3 {
+  padding-bottom: 1em;
+}
+.container {
+  width:100%;
+}
+.top7 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+/*------------
+Header section
+------------*/
+.main_head {
+  min-height: 480px;
+  background-image: url('../img/bg.jpg');
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 10;
+}
+.top_wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.top_wrapper .top_descr {
+  display: table-row; 
+}
+.top_wrapper .top_descr .top_centered {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; 
+}
+.top_wrapper .top_text {
+  display: inline-block;
+}
+.top_wrapper .top_text p {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.top_wrapper .top_text h1 {
+  display: inline-block;
+  padding: 10px 35px;
+  color: #fff;
+  border: 8px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.8em;
+}
+.scroll-down { 
+  height: 60px; 
+  width: 80px; 
+  display: block; 
+  position: absolute; 
+  bottom: 0px; 
+  right: 3%; 
+  background-color: #222222; 
+  text-align: center; 
+  z-index: 6;
+  padding-top: 10px;
+  visibility: hidden; 
+}
+.scroll-down:hover { 
+  background-color: rgba(98, 162, 175, 0.5);
+}
+.fa-chevron-down {
+  color: white !important;
+}
+@media (max-width: 760px) {
+  .scroll-down {
+    right: 0%;
+    width: 80px;
+  }
+}
+/*----------------
+Navigation section
+----------------
+/*-------------
+1st CTA section
+-------------*/
+.place {
+  width: 100%;
+  background-size: cover;
+  background-position: 60% 50%;
+  background-image: url('../img/place.jpg');
+  text-align: center;
+}
+.take_call {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 10px solid rgba(98, 162, 175, 1);
+  padding: 7em 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.take_call p {
+  color: white;
+  padding-bottom: 1em;
+}
+.take_call h3 {
+  color: white;
+  padding-bottom: 1em;
+}
+.btn {
+  background-color: rgba(255, 140, 67, 1);
+  color: white;
+  line-height: 2em;
+  text-transform: uppercase;
+  border-radius: 1px;
+  margin-top: 0.5em;
+}
+.btn:hover {
+  background-color: #ffa56c;
+  color: white;
+}
+.fa-phone {
+  color: white !important;
+  margin-right: 10px;
+}
+/*-------------------
+Ways to Study section
+--------------------*/
+.ways-bg {
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding-top: 8%;
+  border: 0.5px solid rgba(0,0,0,0.1);
+  border-bottom: none;
+}
+.ways ul {
+  border-radius: 0px !important;
+  border-bottom: 0.5px solid rgba(0,0,0,0.1);
+}
+.ways li {
+  border-radius: 0px !important;
+  border-left: none;
+  border-right: none;
+}
+.ways li:last-child {
+  border-bottom: none;
+}
+.ways li:first-child {
+  border-top: none;
+}
+.ways li:after {
+  content: "";
+  width: 3%;
+  height:1px;
+  background-color:white;
+  position: absolute;
+  right:0;
+  top:-1px;
+}
+.ways li:before {
+  content: "";
+  width: 3%;
+  height:1px;
+  background-color:white;
+  position: absolute;
+  left:0;
+  top:-1px;
+}
+.ways img {
+  max-width: 110px;
+  max-height: 110px;
+  display:block;
+  margin:0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.ways h4 {
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(98, 162, 175, 1);
+  padding-bottom: 15px;
+}
+
+/*------------------------
+About school (steps-puzzle)
+-------------------------*/
+#about-school {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.steps {
+  padding: 10px;
+  text-align: center;
+}
+.steps-bg { 
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px 5px;
+  border: 0.5px solid rgba(0,0,0,0.1);
+  border-left: 3px solid rgba(255, 140, 67, 1);
+}
+.steps-bg p:last-of-type {
+  font-style: italic;
+  color: rgba(0,0,0,0.3);
+}
+.fa {
+  color: rgba(255, 140, 67, 1);
+}
+/*-------------------
+About Teacher Section
+-------------------*/
+#about-us {
+  background-color: #f0f0f0;
+}
+.about_teacher {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 0.5px solid rgba(29, 104, 135, 0.2);
+  background: white;
+  padding: 1% 1%;
+  margin: 2em auto;
+}
+.about_teacher img {
+  max-width: 100%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.about_teacher img, .about_teacher ul:first-of-type {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 1.2em;
+  margin-bottom: 3%;
+}
+.teacher-info li {
+  text-align: left;
+  padding-top: 10px;
+}
+.teacher-info span {
+  color: #1d6887;
+}
+/*-----------------
+Testimonial Section
+-----------------*/
+ol, ul {
+	padding: 0;
+  list-style: none;
+  list-style: none;
+}
+.cd-testimonials-wrapper { /*основное заполнение*/
+  position: relative;
+  width: 90%;
+  margin: 2em auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 0.5px solid rgba(255, 140, 67, 0.2);
+  padding: 20px 30px;
+  z-index: 1;
+  background: white;
+}
+.cd-testimonials-wrapper::after { /*ковычки*/
+  /* quotation mark */
+  content: '\201C';
+  position: absolute;
+  top: -10px;
+  /*left: 0;*/
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding-top: 8px;
+  margin-right: -25px;
+  background: rgba(255, 140, 67, 0.9);
+  font-family: "Georgia", serif;
+  color: white;
+  font-size: 70px;
+  font-size: 4.375rem;
+  text-align: center;
+  border-radius: 3px 3px 3px 3px;
+}
+.cd-testimonials { 
+  color: white;
+  text-align: center;
+}
+.cd-testimonials:after { 
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-testimonials > li { /* скрывает все отзывы*/
+  position: absolute;
+  opacity: 0;
+}
+.cd-testimonials > li:first-child { /*делает видимым первый отзыв*/
+  position: relative;
+  opacity: 1;
+}
+.cd-testimonials p { /* изменяет стиль самого отзыва*/
+  line-height: 1.4;
+  margin-bottom: 1em;
+  padding: 0 14px;
+}
+.cd-author img, .cd-author .cd-author-info { /* изменяет положение фото и имени*/
+  display: inline-block;
+  vertical-align: middle;
+}
+.cd-author img { /* ограничивает фото по окружностии*/
+  max-width: 100%;
+  width: 60px; /*было 42px*/
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3px;
+}
+.cd-author .cd-author-info {
+  text-align: left;
+  line-height: 1.2;
+}
+.cd-author .cd-author-info li:first-child {
+  font-size: 12px;
+}
+.cd-author .cd-author-info li:last-child {
+  font-size: 12px;
+}
+.flex-direction-nav li { /* размечает кнопки навигации вверх без отступов*/
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  top: 0;
+}
+.flex-direction-nav li:first-child { /* распределяет кнопки навигации по бокам*/
+  left: 0;
+}
+.flex-direction-nav li:last-child { /* распределяет кнопки навигации по бокам*/
+  right: 0;
+}
+.flex-direction-nav li a { /* заменяет кнопки на области по бокам*/
+  display: block;
+  height: 100%;
+  width: 100%;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  border-radius: 0px 0px 0px 0px;
+}
+.flex-direction-nav li a:hover { /* назначает выделение области при наведении мышки*/
+  background-color: rgba(255, 140, 67, 0.7)
+}
+.flex-direction-nav li a::before, .flex-direction-nav li a::after { /* создание стрелок (пока вертикальные черты)*/
+  /* left and right arrows in css only */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 13px;
+  background-color: white;
+}
+.flex-direction-nav li a::before { /* поворот черт до стрелки*/
+  -webkit-transform: translateY(-13px) rotate(45deg);
+  -moz-transform: translateY(-13px) rotate(45deg);
+  -ms-transform: translateY(-13px) rotate(45deg);
+  -o-transform: translateY(-13px) rotate(45deg);
+  transform: translateY(-13px) rotate(45deg);
+}
+.flex-direction-nav li a::after { /* поворот черт до стрелки*/
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+  -moz-transform: translateY(-5px) rotate(-45deg);
+  -ms-transform: translateY(-5px) rotate(-45deg);
+  -o-transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-5px) rotate(-45deg);
+}
+.flex-direction-nav li:last-child a::before { /* инверсия второй стрелки*/
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -moz-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+.flex-direction-nav li:last-child a::after { /* инверсия второй стрелки*/
+  -webkit-transform: translateY(-5px) rotate(45deg);
+  -moz-transform: translateY(-5px) rotate(45deg);
+  -ms-transform: translateY(-5px) rotate(45deg);
+  -o-transform: translateY(-5px) rotate(45deg);
+  transform: translateY(-5px) rotate(45deg);
+}
+.flex-direction-nav li a::before, .flex-direction-nav li a::after { /* назначение стрелкам серого цвета и анимации*/
+    background-color: rgba(255, 140, 67, 0.9);
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+.flex-direction-nav li a:hover::before, .flex-direction-nav li a:hover::after { /* назначение стрелкам белого цвета при наведении*/
+    background-color: white;
+  }
+/*------------
+Offer & Prices
+------------*/
+.offer {
+  background-color: rgba(98, 162, 175, 1);
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.offer h4 {
+  line-height: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-bottom: 0px;
+}
+.offer p {
+  text-align: center;
+  color: white;
+}
+.offer ul {
+  margin: 0px 0px;
+  padding-bottom: 5px;
+  border-radius: 0px !important;
+}
+.offer li {
+  border-radius: 0px !important;
+}
+#main_offer {
+  background-color: rgba(255, 140, 67, 1);;
+}
+/*-------------
+2nd CTA section
+-------------*/
+.cta {
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('../img/place-wood.jpg');
+  text-align: center;
+}
+.call_back {
+  margin: 0px 0px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(98, 162, 175, 0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 2em;
+}
+/*--------------
+Contacts section
+--------------*/
+.contacts {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: auto;
+  background: rgba(255, 255, 255, 1);
+  margin-top: 10px;
+  padding: 1em 0;
+  border: 1px solid rgba(98, 162, 175, 0.5);
+}
+.contacts p {
+  text-align: center;
+}
+.map-md {
+  max-width: 450px;
+  max-height: 450px;
+  display:block;
+  margin:0 auto;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: white;
+}
+.map-xs {
+  display: none;
+  max-width: 320px;
+  max-height: 320px;
+  margin: 10px auto 0;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: white;
+}
+@media (max-width: 760px) {
+  .map-md {
+    display: none;
+  }
+  .map-xs {
+    display: inline-block;
+  }
+}
+.blue {
+  color: rgba(98, 162, 175, 1) !important;
+  margin-right: 5px;
+}
+/*----
+Modals
+----*/
+.modal p {
+  margin: 2em auto;
+}
+.modal-content {
+  border-radius: 0px;
+  text-align: center;
+}
+.input-phone {
+  line-height: 2em;
+}
+.input-group {
+  max-width: 235px;
+  margin: 0 auto;
+}
+.input-group-addon {
+  background: rgba(98, 162, 175, 0.2);
+}
+.input-group span {
+  border-radius: 1px;
+}
+.input-group input {
+  border-radius: 1px;
+}
+.input-group input:focus {
+  border: 0.5px solid rgba(255, 140, 67, 1);
+}
+.input-group .fa {
+  margin: 0 0;
+}
+
